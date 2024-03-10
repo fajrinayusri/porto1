@@ -1,0 +1,236 @@
+
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15) !important;
+        backdrop-filter: blur(10px) !important;
+    }
+}
+
+.action-btn {
+    font-weight: bold;
+}
+
+.action-btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action-btn:active {
+    scale: 0.95;
+}
+
+.card:hover {
+    scale: 1.06;
+    background-color: lightgray;
+}
+/*Hero*/
+section#main {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: url(../porto1/images/images2.jpg) rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+#main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#main p {
+    font-size: 2rem;
+}
+
+/* about section image css */
+.imageAboutPage {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    padding: 8px;
+    background: linear-gradient(135deg, #d0eff8, #168cad);
+    /*background: linear-gradient(135deg, #d0eff8, #168cad 50%, lightgray 50%);
+    background-size: 250%;
+    background-position: 100% 100%;
+    transition: background 0.5s;
+}
+
+.imageAboutPage:hover {
+    background-position: 0% 0%;*/
+}
+.txt {
+    margin-bottom: -40px !important;
+}
+
+/* spacing on all sections */ 
+#about, #portfolio, #contact {
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 30px;
+    cursor: pointer;
+    align-items: center;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-github:hover {
+    color: orange;
+}
+.fab {
+    color: #236666dc;
+}
+
+.fa {
+    color: orange;
+}
+
+/*CONTACT SECTION*/
+section#contact {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../porto1/images/images2.jpg);
+}
+
+.contact-form{
+    position: relative;
+    height: 100vh;
+    z-index: 0;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+}
+.contain {
+    max-width: 800px;
+    margin-top: 0 auto;
+}
+.contact-form h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #000;
+}
+.contact-form h2{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+.contact-form .main{
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+.content {
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background: lightgray;
+    box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-img{
+    flex-basis: 50%;
+    background: #f0f4f8;
+    background-size: cover;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+}
+.form-img img{
+    max-width: 100%;
+}
+.btn,
+button,
+input{
+    border-radius: 35px;
+}
+.btn:hover,
+button:hover{
+    color: orange;
+    transition: 0.5s ease;
+}
+.contact-form form{
+    margin: 30px 0;
+}
+.contact-form input,
+textarea{
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #fcfcfc;
+    transition: 0.3s ease;
+}
+.contact-form input:focus{
+    background: transparent;
+    border: 1px solid orange;
+}
+.contact-form button{
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: orange;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 14px 15px;
+    border: 1px solid orange;
+
+}
+@media(max-width:736px){
+    .contact-form .main{
+        flex-direction: column;
+    }
+    .contact-form form{
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+    }
+    .form-img{
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+    .content{
+        order: 1;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+
+/* footer styling */
+#footer {
+    background-color: lightgray;
+    text-align: center;
+}
+
+#footer p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #236666dc !important;
+}
